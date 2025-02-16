@@ -1,0 +1,1 @@
+This bug occurs when using the Expo `Linking` API to handle deep links.  If the app is opened from a deep link that includes a URL fragment (the part of the URL after the `#`), the `getInitialURL` method might not return the complete URL, omitting the fragment. This can lead to incorrect handling of the deep link and unexpected behavior within the application.
